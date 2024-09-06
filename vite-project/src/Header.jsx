@@ -1,10 +1,13 @@
-import React from "react"
+import reactLogo from './assets/react.svg'
 
-export default function Header() {
+function Header() {
     return (
         <header>
             <nav className="nav">
-                <img className="logo" src="./react-logo.png" />
+                <div className="logo-title">
+                    <img className="logo" src={reactLogo} />
+                    <h2>ReactFacts</h2>
+                </div>
                 <ul className="nav-items">
                     <li>Pricing</li>
                     <li>About</li>
@@ -14,3 +17,5 @@ export default function Header() {
         </header>
     )
 }
+
+export default Header
